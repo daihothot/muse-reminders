@@ -105,4 +105,17 @@ ACTION:DISPLAY
 DESCRIPTION:CMLink 保号套餐到期日
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:20270302-tailscale-key-check@muse-reminders
+DTSTAMP:20261110T044020Z
+DTSTART;TZID=Asia/Shanghai:20270302T090000
+DTEND;TZID=Asia/Shanghai:20270302T093000
+SUMMARY:Tailscale 密钥到期检查
+DESCRIPTION:这台 Muse 电脑 2026-10-10 加入 tailnet（设备名 muse），记录的节点密钥有效期约 5 个月，最早可能 2027-03-09 前后到期；VPS claude-gateway 是 2026-11-02 加入的，晚一个月左右。\n去 Tailscale 管理页 Machines 列表核对 muse 和 claude-gateway 两台的准确到期日，到期前重新认证续期；如果已经关掉了密钥过期，忽略这条。\n影响范围：只影响 tailnet 内网路（Muse 走内网 SSH 到 VPS、Studio 经 tailnet 到 VPS 的备用路），公网 SSH 和 Claude 主路不受影响。
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Tailscale 密钥到期检查
+END:VALARM
+END:VEVENT
 END:VCALENDAR

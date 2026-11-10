@@ -25,6 +25,10 @@ https://daihothot.github.io/muse-reminders/muse-reminders.ics
 - 2027-10-23：CMLink 保号套餐续费检查（提前 7 天）
 - 2027-10-30：CMLink 保号套餐到期日（365 天套餐，有效至 2027-10-30 23:59:59）
 
+Tailscale 密钥到期检查（北京时间 09:00，提前 15 分钟提醒）：
+
+- 2027-03-02：Tailscale 密钥到期检查（muse 约 5 个月到期，最早可能 2027-03-09 前后；claude-gateway 晚一个月左右，到期前重新认证）
+
 ## 维护方式
 
 有新提醒时，更新 `muse-reminders.ics` 并推送到 `master` 即可，订阅地址保持不变。事件 ID 保持稳定，避免重复提醒。

@@ -118,4 +118,30 @@ ACTION:DISPLAY
 DESCRIPTION:Tailscale 密钥到期检查
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:20261116-ant-ipo-window@muse-reminders
+DTSTAMP:20261110T113400Z
+DTSTART;TZID=Asia/Shanghai:20261116T090000
+DTEND;TZID=Asia/Shanghai:20261116T093000
+SUMMARY:ANT 上市窗口开启（最早首日交易日）
+DESCRIPTION:Anthropic 计划以代码 ANT 在纳斯达克上市。11 月 16 日是按流程算出的最早可能首日交易日，但公司尚未确认具体日期，报道称更可能在 11 月 19–20 日。\n今天留意路演定价消息；美股开盘在北京时间今晚 22:30。\n如今天没有交易也属正常，日期可能推迟。
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ANT 上市窗口开启
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261119-ant-ipo-first-trade@muse-reminders
+DTSTAMP:20261110T113400Z
+DTSTART;TZID=Asia/Shanghai:20261119T090000
+DTEND;TZID=Asia/Shanghai:20261119T093000
+SUMMARY:ANT 首日交易日（报道称最可能 11 月 19–20 日）
+DESCRIPTION:报道称 Anthropic（ANT）最可能在 11 月 19 日或 20 日首日交易（路演 11 月 10 日开始）。\n如今天开盘，留意首日表现；日期仍未获公司确认，可能再推迟。\n美股开盘北京时间今晚 22:30。
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ANT 首日交易日
+END:VALARM
+END:VEVENT
 END:VCALENDAR

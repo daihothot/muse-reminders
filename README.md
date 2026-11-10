@@ -20,6 +20,11 @@ https://daihothot.github.io/muse-reminders/muse-reminders.ics
 - 2026-12-30：QQG 月付续费（12 月）
 - 2027-01-27：QQG 年付购买 + 迁移窗口
 
+英国卡 CMLink 保号套餐续费提醒（北京时间 09:00，提前 15 分钟提醒）：
+
+- 2027-10-23：CMLink 保号套餐续费检查（提前 7 天）
+- 2027-10-30：CMLink 保号套餐到期日（365 天套餐，有效至 2027-10-30 23:59:59）
+
 ## 维护方式
 
 有新提醒时，更新 `muse-reminders.ics` 并推送到 `master` 即可，订阅地址保持不变。事件 ID 保持稳定，避免重复提醒。

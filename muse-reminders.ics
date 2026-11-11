@@ -120,11 +120,11 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261116-ant-ipo-window@muse-reminders
-DTSTAMP:20261110T113400Z
+DTSTAMP:20261110T223911Z
 DTSTART;TZID=Asia/Shanghai:20261116T090000
 DTEND;TZID=Asia/Shanghai:20261116T093000
 SUMMARY:ANT 上市窗口开启（最早首日交易日）
-DESCRIPTION:Anthropic 计划以代码 ANT 在纳斯达克上市。11 月 16 日是按流程算出的最早可能首日交易日，但公司尚未确认具体日期，报道称更可能在 11 月 19–20 日。\n今天留意路演定价消息；美股开盘在北京时间今晚 22:30。\n如今天没有交易也属正常，日期可能推迟。
+DESCRIPTION:Anthropic 计划以代码 ANT 在纳斯达克上市。11 月 10 日更新的招股书已定发行价区间 $70–$78（发行 8.25 亿股）；据 CNBC 援引知情人士，定价在 11 月 18 日、首日交易预计 11 月 19 日，11 月 16 日首日交易的可能性现已很低。\n公司本身仍未在招股书里确认具体日期，时间表仍可能推迟。\n美股开盘在北京时间今晚 22:30。
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -133,11 +133,11 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261119-ant-ipo-first-trade@muse-reminders
-DTSTAMP:20261110T113400Z
+DTSTAMP:20261110T223911Z
 DTSTART;TZID=Asia/Shanghai:20261119T090000
 DTEND;TZID=Asia/Shanghai:20261119T093000
-SUMMARY:ANT 首日交易日（报道称最可能 11 月 19–20 日）
-DESCRIPTION:报道称 Anthropic（ANT）最可能在 11 月 19 日或 20 日首日交易（路演 11 月 10 日开始）。\n如今天开盘，留意首日表现；日期仍未获公司确认，可能再推迟。\n美股开盘北京时间今晚 22:30。
+SUMMARY:ANT 首日交易日（预计 11 月 19 日）
+DESCRIPTION:Anthropic（ANT）发行价区间 $70–$78，发行 8.25 亿股，估值约 $1.1–1.4 万亿。据 CNBC 援引知情人士，定价 11 月 18 日，首日交易预计今天（11 月 19 日）。\n公司本身仍未在招股书里确认日期，仍可能推迟；如今天未开盘，留意 11 月 20 日。\n美股开盘北京时间今晚 22:30。
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY

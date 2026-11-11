@@ -14,11 +14,8 @@ https://daihothot.github.io/muse-reminders/muse-reminders.ics
 
 当前包含 Claude 网关续费提醒（北京时间 09:00，提前 15 分钟提醒）：
 
-- 2026-11-27：IPRoyal 续费检查（提前 3 天）
-- 2026-11-30：IPRoyal + Claude Pro + QQG VPS 续费日
-- 2026-12-27：QQG 年付切换准备
-- 2026-12-30：QQG 月付续费（12 月）
-- 2027-01-27：QQG 年付购买 + 迁移窗口
+- 2026-11-27：IPRoyal 续费检查（提前 3 天）+ QQG 年付购买 + 迁移窗口（$39.99/年）
+- 2026-11-30：IPRoyal + Claude Pro 续费日（QQG 月付已取消，不再续费）
 
 英国卡 CMLink 保号套餐续费提醒（北京时间 09:00，提前 15 分钟提醒）：
 
@@ -28,11 +25,6 @@ https://daihothot.github.io/muse-reminders/muse-reminders.ics
 Tailscale 密钥到期检查（北京时间 09:00，提前 15 分钟提醒）：
 
 - 2027-03-02：Tailscale 密钥到期检查（muse 约 5 个月到期，最早可能 2027-03-09 前后；claude-gateway 晚一个月左右，到期前重新认证）
-
-Anthropic IPO（ANT）上市提醒（北京时间 09:00，提前 15 分钟提醒）：
-
-- 2026-11-16：ANT 上市窗口开启（最早可能首日交易日，日期未获公司确认）
-- 2026-11-19：ANT 首日交易日（报道称最可能 11 月 19–20 日）
 
 ## 维护方式
 

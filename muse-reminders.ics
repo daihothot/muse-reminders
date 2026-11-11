@@ -42,41 +42,28 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261227-qqg-annual-prep@claude-gateway
-DTSTAMP:20261110T024647Z
+DTSTAMP:20261111T161900Z
 DTSTART;TZID=Asia/Shanghai:20261227T090000
 DTEND;TZID=Asia/Shanghai:20261227T093000
-SUMMARY:QQG 年付切换准备
-DESCRIPTION:核对 QQG 年付 $39.99/年是否还有货、价格有无变化（年付不退款，到时再确认）。\n今天先不买。计划：在 1 月那期月付续费（约 1 月 30 日）前几天买年付，迁移、验证没问题了，再取消旧月付，避免重叠多付一个月。\n注意：年付是另买一台新 VPS 再迁移，不是原机改账期；规格是 200M、200G/月，低于现在月付的 500M、500G/月。
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:QQG 年付切换准备
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:20261230-qqg-monthly-renew@claude-gateway
-DTSTAMP:20261110T024647Z
-DTSTART;TZID=Asia/Shanghai:20261230T090000
-DTEND;TZID=Asia/Shanghai:20261230T093000
-SUMMARY:QQG 月付续费（12 月）
-DESCRIPTION:QQG 洛杉矶 CN2 GIA 月付 $6.50，本期继续月付，不要提前取消。\n年付切换放在 1 月那期续费前几天做。
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:QQG 月付续费（12 月）
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:20270127-qqg-annual-buy@claude-gateway
-DTSTAMP:20261110T024647Z
-DTSTART;TZID=Asia/Shanghai:20270127T090000
-DTEND;TZID=Asia/Shanghai:20270127T093000
 SUMMARY:QQG 年付购买 + 迁移窗口
-DESCRIPTION:买 QQG 年付 $39.99/年（先核对到时价格与库存），新 VPS 上搭好 sing-box 网关，全端验证出口仍是 46.203.146.149，再取消旧月付 VPS。\n年付不退款，买前确认规格（200M、200G/月）可接受。买好后告诉我，我帮你搭新的、验一遍再切。
+DESCRIPTION:买 QQG 年付 $39.99/年（先核对到时价格与库存，年付不退款）。\n新 VPS 上搭好 sing-box 网关，全端验证出口仍是 46.203.146.149，再在 12 月 30 日续费前取消旧月付 VPS，这样 12 月那期 $6.50 不用再付，1 月起就是年付。\n注意：年付是另买一台新 VPS 再迁移，不是原机改账期；规格是 200M、200G/月，低于现在月付的 500M、500G/月，但 11 月 11 日用量图显示 CPU 峰值不到 5%、网络突发不到 9，完全够用。\n另一条路（直接转原机年付 $65/年，保配置保 IP）已放弃，选的是 $39.99 新年付，多省 $25/年。买好后告诉我，我帮你搭新的、验一遍再切。
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
 DESCRIPTION:QQG 年付购买 + 迁移窗口
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261230-qqg-monthly-renew@claude-gateway
+DTSTAMP:20261111T161900Z
+DTSTART;TZID=Asia/Shanghai:20261230T090000
+DTEND;TZID=Asia/Shanghai:20261230T093000
+SUMMARY:QQG 月付取消（已迁年付则不续费）
+DESCRIPTION:如果 12 月 27 日已买年付并迁移验证完，今天之前取消旧月付 VPS，不要再付 $6.50 续费。\n如果还没迁移，今天继续月付 $6.50，迁移改到 1 月那期续费前做。
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:QQG 月付取消（已迁年付则不续费）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT

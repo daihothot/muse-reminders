@@ -16,41 +16,28 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261127-iproyal-check@claude-gateway
-DTSTAMP:20261110T024647Z
+DTSTAMP:20261116T085644Z
 DTSTART;TZID=Asia/Shanghai:20261127T090000
 DTEND;TZID=Asia/Shanghai:20261127T093000
-SUMMARY:IPRoyal 续费检查（提前 3 天）
-DESCRIPTION:IPRoyal 静态住宅代理 $5.40/30 天，2026-11-30 到期，出口 IP 46.203.146.149。\n已开自动续费，仍需确认付款方式有效、余额充足。\n11 月 30 日同日续费的还有 Claude Pro（SGD 27.52/月），一并确认付款方式有效。QQG 月付今天不续了——今天同时买年付、迁移，11 月 30 日前取消旧月付 VPS。
+SUMMARY:取消自动续费检查（Claude 已放弃）
+DESCRIPTION:11 月 16 日决定放弃 Claude：不买 QQG 年付，不续 Pro。\n30 日前确认三项自动续费都已关掉：Claude Pro（SGD 27.52/月，Claude 设置 → 账单里取消）、IPRoyal 代理（$5.40/30 天，后台订单页关自动续费）、QQG 月付 VPS（$6.50/月，面板里取消）。\n走之前先把 Claude 里的对话导出来（设置 → 数据控制 → 导出），账号现在还能登录。
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:IPRoyal 续费检查
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:20261127-qqg-annual-buy@claude-gateway
-DTSTAMP:20261111T162100Z
-DTSTART;TZID=Asia/Shanghai:20261127T090000
-DTEND;TZID=Asia/Shanghai:20261127T093000
-SUMMARY:QQG 年付购买 + 迁移窗口
-DESCRIPTION:买 QQG 年付 $39.99/年（先核对价格与库存，年付不退款）。\n新 VPS 上搭好 sing-box 网关，全端验证出口仍是 46.203.146.149，再在 11 月 30 日续费前取消旧月付 VPS，这样 11 月那期 $6.50 不用再付，12 月起就用 200M、200G/月那档年付。\n注意：年付是另买一台新 VPS 再迁移，不是原机改账期；规格是 200M、200G/月，低于现在月付的 500M、500G/月，但 11 月 11 日用量图显示 CPU 峰值不到 5%、网络突发不到 9，完全够用。买好后告诉我，我帮你搭新的、验一遍再切。
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:QQG 年付购买 + 迁移窗口
+DESCRIPTION:取消自动续费检查
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261130-iproyal-claude-renew@claude-gateway
-DTSTAMP:20261111T162100Z
+DTSTAMP:20261116T085644Z
 DTSTART;TZID=Asia/Shanghai:20261130T090000
 DTEND;TZID=Asia/Shanghai:20261130T093000
-SUMMARY:IPRoyal + Claude Pro 续费日
-DESCRIPTION:今天两项续费：IPRoyal 代理 $5.40/30 天，Claude Pro SGD 27.52/月。\n确认两项扣款成功，出口仍是 46.203.146.149（Rumney, NH）。\nQQG 月付今天不续费——11 月 27 日已迁到年付，旧月付已取消，确认没有再扣 $6.50。\n如扣款失败，先不要动 Claude 规则，等代理恢复再用。
+SUMMARY:确认三项续费都已停（Claude 已放弃）
+DESCRIPTION:今天确认三项都没有再扣款：Claude Pro SGD 27.52、IPRoyal $5.40、QQG 月付 $6.50。\n如有任何一项扣了款，去各自后台查自动续费是否真的关掉了。\n网关已无用，QQG 月付 VPS 取消后巡检也会停。
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:IPRoyal + Claude Pro + QQG VPS 续费日
+DESCRIPTION:确认三项续费都已停
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
